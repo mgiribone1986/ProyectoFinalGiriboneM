@@ -11,30 +11,30 @@ import { UserDialogComponent } from './user-dialog/user-dialog.component';
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit {
-  displayedColumns: string[] = ['userName', 'userLastName', 'userEmail', 'userCity', 'userProvince', 'userAddress', 'actions'];  
+  displayedColumns: string[] = ['userName', 'userLastName', 'userCity','userEmail','userProvince', 'userAddress', 'actions'];  
   users: Iusuario[] = [
     {
       id: 1,
-      userName: 'prueba 1',
-      userLastName: 'string',
-      userEmail: 'string',
+      userName: 'Marcos',
+      userLastName: 'Gonzalez',
+      userEmail: 'mgascon@hotmail.com',
       userCity: 'string',
-      userProvince: 'string',
-      userAddress: 'string',
+      userProvince: 'Caba',
+      userAddress: 'Zapiola 2122',
       inputZip: 'string',
       userPassword: 'string',
-      role: 'ADMIN',
+      role: 'VENDEDOR',
       createdAt: new Date(),
       actions: []
     },
     {
       id: 2,
-      userName: 'prueba 2',
-      userLastName: 'string',
-      userEmail: 'string',
-      userCity: 'string',
-      userProvince: 'string',
-      userAddress: 'string',
+      userName: 'Roberto',
+      userLastName: 'Goncalvez',
+      userEmail: 'mitre@gmail.com',
+      userCity: 'Munro',
+      userProvince: 'Buenos Aires',
+      userAddress: 'Mitre 3122',
       inputZip: 'string',
       userPassword: 'string',
       role: 'ADMIN',
