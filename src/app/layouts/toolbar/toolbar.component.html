@@ -1,0 +1,46 @@
+
+<mat-toolbar class="mat-elevation-z8">
+  <button mat-icon-button (click)="toggleSidenav()">
+      <mat-icon>Menu</mat-icon>
+  </button>
+    Mi Aplicación
+</mat-toolbar>
+
+<div>
+  <app-users></app-users>
+</div>
+
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+      <h4 class="name"> Campus </h4>
+      <p class="designation">Estudiantes</p>
+
+      <mat-divider></mat-divider>
+      <a mat-button class="menu-link" routerLink="/home">
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
+      </a>
+      <a mat-button class="menu-link" routerLink="/profile">
+          <mat-icon>person</mat-icon>
+          <span>Perfil</span>
+      </a>
+      <a mat-button class="menu-link" routerLink="/about">
+          <mat-icon>info</mat-icon>
+          <span>About</span>
+      </a>
+
+      <mat-divider>
+
+
+      </mat-divider>
+
+      <a mat-button class="menu-link" routerLink="/help">
+          <mat-icon>Ayuda</mat-icon>
+          <span>Ayuda</span>
+      </a>
+  </mat-sidenav>
+        <router-outlet></router-outlet>
+  <mat-sidenav-content>
+      
+  </mat-sidenav-content>
+</mat-sidenav-container>

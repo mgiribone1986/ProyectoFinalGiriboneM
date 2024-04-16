@@ -1,0 +1,44 @@
+body {
+  background-color: #d7e6bb;
+}
+
+.text-danger {
+  color: #dc3545;
+  font-size: 1em;
+  margin-top: 5px;
+}
+
+input.ng-invalid.ng-touched,
+select.ng-invalid.ng-touched {
+  border-color: #dc3545; /* Color: #f77754 */
+}
+
+.form-register {
+  width: 50%;
+  background: #ffe8c8; /* Color: #fdd396 */
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  border-radius: 4px;
+  font-family: 'calibri';
+  font-size: 22px;
+  color: #241f20; /* Color: #231f20 */
+  box-shadow: 7px 13px 37px #81b350;
+}
+
+.SendButton {
+  margin-top: 10px;
+  background: radial-gradient(circle, #81b350, #fdd396); /* Colors: #81b350, #f77754 */
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+input:focus,
+select:focus {
+  border-color: #81b350; /* Color verde: #81b350 */
+}
